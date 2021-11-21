@@ -44,12 +44,12 @@ body {
 
 section {
 	padding: 5em 2em;
-}
+} 
 
 img {
 	display: block;
 	max-width: 100%;
-}
+} 
 
 strong {
 	font-weight: var(--fw-bold);
@@ -79,7 +79,7 @@ h3 {
 .section__title--heading {
 	font-family: var(--ff-primary);
 	font-weight: var(--fw-bold);
-	margin: 0.5 1.5em;
+	margin: .5 1.5em;
 	padding: 5em;
 	font-size: var(--fs-h1);
 	padding-left: 100px;
@@ -144,6 +144,7 @@ header .half-width nav ul li a {
 	background-size: cover;
 	margin: 0;
 }
+
 
 /* my work portfolio */
 
