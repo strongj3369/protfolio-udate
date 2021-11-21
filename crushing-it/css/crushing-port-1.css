@@ -1,0 +1,383 @@
+/* casework-site page  */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* custom properties */
+
+:root {
+	--ff-primary: 'EB Garamond', sans-serif;
+	--ff-secondary: 'Skranji', monospace;
+
+	--fw-reg: 300;
+	--fw-bold: 900;
+
+	--clr-light: #ff0094;
+	--clr-dark: #20202c;
+	--clr-accent: #f5deb3;
+
+	--fs-h1: 4rem;
+	--fs-h2: 2.25rem;
+	--fs-h3: 1.25rem;
+	--fs-body: 1rem;
+}
+
+@media (min-width: 800px) {
+	:root {
+		--fs-h1: 4.5rem;
+		--fs-h2: 3.75rem;
+		--fs-h3: 1.5rem;
+		--fs-body: 1.125rem;
+	}
+}
+
+body {
+	background-color: var(--clr-dark);
+	margin: 0;
+	font-family: var(--ff-primary);
+	font-size: var(--fs-body);
+	/* line-height: 1.6; */
+}
+
+section {
+	padding: 5em 2em;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+strong {
+	font-weight: var(--fw-bold);
+}
+
+h1,
+h2,
+h3 {
+	line-height: 1;
+	margin: 0;
+}
+
+h1 {
+	font-size: var(--fs-h1);
+}
+h2 {
+	font-size: var(--fs-h2);
+}
+h3 {
+	font-size: var(--fs-h3);
+}
+
+.section__title {
+	margin-bottom: 0.25em;
+}
+
+.section__title--heading {
+	font-family: var(--ff-primary);
+	font-weight: var(--fw-bold);
+	margin: 0.5 1.5em;
+	padding: 5em;
+	font-size: var(--fs-h1);
+	padding-left: 100px;
+}
+
+.section__title--heading strong {
+	color: var(--clr-light);
+	font-family: 'Play', sans-serif;
+}
+
+.section__subtitle {
+	margin: 0;
+	font-size: var(--fs-h3);
+}
+
+nav {
+}
+
+.intro__img {
+	position: relative;
+}
+
+header .full-width {
+	width: 1200px;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+header .half-width {
+	width: 600px;
+	float: left;
+	margin-top: 15px;
+}
+
+header .logo {
+	font-size: 20px;
+	margin: 15px 10px;
+	font-weight: normal;
+	color: wheat;
+}
+
+header .half-width nav {
+	float: right;
+	margin: 15px 10px;
+}
+
+header .half-width nav ul li {
+	display: inline-block;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+header .half-width nav ul li a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 15px;
+	color: #fa0075;
+	padding-left: 100px;
+}
+
+#image.main-image {
+	background-image: url(../img/hero-background.png);
+	background-size: cover;
+	margin: 0;
+}
+
+/* my work portfolio */
+
+.my-work h2 {
+	text-align: center;
+	font-size: 36px;
+	text-transform: uppercase;
+	font-family: 'Skranji', cursive;
+	margin-top: 0px;
+	margin-bottom: 5rem;
+	color: #fa0075;
+}
+
+.wrapper .section__subtitle {
+	color: var(--clr-accent);
+	font-weight: var(--fw-bold);
+	margin-bottom: 0.5em;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(640px, 2fr));
+	grid-gap: 10px;
+	margin: 100px;
+}
+
+.grid-1 img {
+	max-width: 80%;
+	margin: 100px;
+}
+
+.grid-2-message {
+	max-width: 100%;
+	align-items: center;
+	margin-top: 20px;
+	padding-left: 100px;
+}
+
+.grid-2-message .personal-port h3 {
+	margin-top: 150px;
+	padding-bottom: 30px;
+	font-size: 2rem;
+}
+
+.grid-2-message .personal-port h4 {
+	font-size: 1.5rem;
+	padding-bottom: 30px;
+}
+
+.grid-2-message .personal-port p {
+	font-size: 1rem;
+	line-height: 1.9;
+}
+
+.grid-3-message {
+	max-width: 100%;
+	align-items: center;
+	margin-top: 25px;
+	padding-left: 200px;
+}
+.grid-3-message .h-email h3 {
+	margin-top: 150px;
+	padding-bottom: 30px;
+	font-size: 2rem;
+}
+
+.grid-3-message .h-email h4 {
+	font-size: 1.5rem;
+	padding-bottom: 30px;
+}
+
+.grid-3-message .h-email p {
+	font-size: 1rem;
+	line-height: 1.9;
+}
+
+.grid-4 img {
+	max-width: 60%;
+	margin: 100px;
+}
+
+.grid-5 img {
+	max-width: 80%;
+	margin: 100px;
+}
+
+.grid-6-message {
+	max-width: 100%;
+	align-items: center;
+	margin-top: 40px;
+	padding-left: 80px;
+}
+
+.grid-6-message .landing h3 {
+	margin-top: 135px;
+	font-size: 2rem;
+	padding-bottom: 30px;
+}
+
+.grid-6-message .landing h4 {
+	font-size: 1.5rem;
+	padding-bottom: 30px;
+}
+
+.grid-6-message .landing p {
+	font-size: 1rem;
+	line-height: 1.7;
+}
+
+.grid-7-message {
+	max-width: 100%;
+	align-items: center;
+	margin-top: 135px;
+	padding-left: 200px;
+}
+
+.grid-7-message .cms h3 {
+	margin-top: 25px;
+	font-size: 2rem;
+	padding-bottom: 30px;
+}
+
+.grid-7-message .cms h4 {
+	font-size: 1.5rem;
+	padding-bottom: 30px;
+}
+
+.grid-7-message .cms p {
+	font-size: 1rem;
+	line-height: 1.7;
+}
+
+.grid-8 img {
+	max-width: 80%;
+	margin: 100px;
+}
+
+/* about me img section */
+
+.about-me {
+	background-image: url(../img/about-me.png);
+	background-size: cover;
+	margin: 0;
+}
+
+.about-me h2 {
+	position: relative;
+	padding: 275px 40px 15px 400px;
+	color: #fa0075;
+	font-size: 36px;
+	font-family: 'EB Garamond', serif;
+	text-transform: uppercase;
+}
+
+.about-me h3 {
+	position: relative;
+	padding: 0px 30px 30px 410px;
+	color: #fa0075;
+	font-size: 25px;
+}
+
+.about-me p {
+	position: relative;
+	padding: 0px 30px 300px 410px;
+	color: #fa0075;
+	font-size: 1.2em;
+	line-height: 25px;
+	margin: 0;
+}
+
+/* @media (min-width: 800px){
+	.about-me {
+		
+	}
+} */
+
+/* new footer starts here */
+
+.footer-container {
+	background-color: #111;
+	text-align: center;
+	color: var(--clr-accent);
+	padding: 2em 0;
+}
+
+.footer-container .company-details h2 {
+	color: #ff0094;
+	margin: 65px;
+	font-size: 2rem;
+	text-align: center;
+	font-family: 'EB Garamond', serif;
+}
+
+.footer-container .row {
+	margin-bottom: 20px;
+	line-height: 23px;
+}
+
+.footer-container .row .column {
+	float: left;
+	width: 33.33%;
+	padding: 10px;
+}
+
+.footer-container .row .column a {
+	color: var(--clr-accent);
+	text-decoration: none;
+}
+
+.footer-container .row .column a:hover {
+	color: var(--clr-light);
+}
+
+.footer-container .row:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.footer-container .row .column h3 {
+	font-size: 25px;
+	font-family: 'EB Garamond', serif;
+	padding-bottom: 32px;
+}
+
+.footer-container .column .social-media li {
+	display: inline-block;
+	padding: 15px;
+	font-size: 25px;
+}
+
+.footer-container .column .social-media i {
+	color: #ff0094;
+}
+.copyright p {
+	padding-bottom: 25px;
+}
